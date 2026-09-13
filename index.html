@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For My Dearest Samya ❤️ | From Muhammad Ali</title>
+    
+    <!-- Fonts & External Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Great+Vibes&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Floating Background -->
+    <div class="bg-elements" id="bgElements"></div>
+
+    <!-- Music Button -->
+    <div class="music-btn" id="musicBtn" onclick="toggleAudio()" title="Play Music">🎵</div>
+    <audio id="loveAudio" loop src="https://assets.mixkit.co/music/preview/mixkit-romantic-sun-685.mp3"></audio>
+
+    <!-- Main Mobile Card -->
+    <div class="card">
+        <div class="header-tag">Special Proposal</div>
+        
+        <h1 class="main-title">For Dearest Samya ❤️</h1>
+        <p class="subtitle">Designed with love by <span>Muhammad Ali</span></p>
+
+        <!-- Urdu Poetry Cards -->
+        <div class="poetry-section">
+            <div class="urdu-card">
+                <p class="urdu-poetry">تیرے بغیر زندگی سے کوئی شکوہ تو نہیں،<br>تیرے بغیر زندگی بھی لیکن زندگی تو نہیں۔۔۔✨</p>
+                <p class="poetry-translation">"Tum mere din ki roshni aur meri har dua ki wajah ho!"</p>
+            </div>
+
+            <div class="urdu-card">
+                <p class="urdu-poetry">سنو سامیہ! ہزاروں احساسات میں بس ایک احساس ہو تم،<br>خدا کی بنائی سب سے خوبصورت بات ہو تم۔۔۔💖</p>
+                <p class="poetry-translation">"Forever & Always, You are my dream come true."</p>
+            </div>
+        </div>
+
+        <!-- Timer Box -->
+        <div class="timer-box">
+            <div class="timer-title">Thinking About You Since</div>
+            <div class="timer-counter" id="loveTimer">0 Days, 0h 0m 0s</div>
+        </div>
+
+        <!-- Proposal Container -->
+        <div class="proposal-container">
+            <h2 class="proposal-question">Will you hold my hand forever? 💍</h2>
+            
+            <div class="buttons-area">
+                <button class="btn btn-yes" onclick="acceptedProposal()">Yes, Forever! 💕</button>
+                <button class="btn btn-no" id="noBtn" onclick="moveNoButton()" onmouseover="moveNoButton()" ontouchstart="moveNoButton()">No 🙈</button>
+            </div>
+        </div>
+
+        <div class="footer">Crafted with ❤️ by Muhammad Ali for Samya</div>
+    </div>
+
+    <!-- Success Modal Popup -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-card">
+            <h2>Yayyy! 💖🎉</h2>
+            <p>You made <b>Muhammad Ali</b> the happiest person in the world! 🌹✨<br><br><b>I Love You So Much Samya! ❤️</b></p>
+            <button class="modal-close-btn" onclick="closeModal()">Forever Together! 💍</button>
+        </div>
+    </div>
+
+    <!-- Link JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
